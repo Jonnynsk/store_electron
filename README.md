@@ -60,14 +60,18 @@ npm run dist
 ## Структура проекта
 
 ```text
-electron/          main process, preload, AppPaths
-catalog/           справочник на диске (не бандлится в renderer)
+electron/          main, preload, AppPaths (ASAR/dev paths)
+catalog/           catalog.json на диске (не import в renderer)
+scripts/           electron-dev.js — wait Vite + watch electron/
 src/
+  api/             readCatalog → electronAPI / fetch fallback
   pages/           CatalogPage
-  components/      UI
-  store/           Pinia (индексы + markRaw)
+  components/      UI (крошки, группы, товары, поиск, detail)
+  store/           Pinia (Map-индексы + markRaw)
   services/        CatalogTreeBuilder, CatalogSearch, PriceFormatter
-  api/             electronAPI → IPC
+  styles/          design tokens + global CSS
+  utils/           маппинг Lucide-иконок разделов
+vite.config.js     Vite + unplugin-icons + serve catalog в browser-dev
 ```
 
 ## Справочник
