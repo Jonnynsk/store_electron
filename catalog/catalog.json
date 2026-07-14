@@ -1,0 +1,424 @@
+{
+  "groups": [
+    { "id": 1, "idParent": null, "name": "Напитки", "logo": "lucide:cup-soda" },
+    { "id": 2, "idParent": null, "name": "Еда", "logo": "lucide:utensils-crossed" },
+    { "id": 3, "idParent": null, "name": "Десерты", "logo": "lucide:cake" },
+    { "id": 4, "idParent": 1, "name": "Кофе", "logo": "lucide:coffee" },
+    { "id": 5, "idParent": 1, "name": "Чай", "logo": "lucide:leaf" },
+    { "id": 6, "idParent": 1, "name": "Авторские напитки", "logo": "lucide:sparkles" },
+    { "id": 7, "idParent": 4, "name": "Эспрессо", "logo": "lucide:coffee" },
+    { "id": 8, "idParent": 4, "name": "Молочные кофейные", "logo": "lucide:milk" },
+    { "id": 9, "idParent": 4, "name": "Холодный кофе", "logo": "lucide:snowflake" },
+    { "id": 10, "idParent": 5, "name": "Чёрный чай", "logo": "lucide:leaf" },
+    { "id": 11, "idParent": 5, "name": "Зелёный чай", "logo": "lucide:leaf" },
+    { "id": 12, "idParent": 2, "name": "Завтраки", "logo": "lucide:egg-fried" },
+    { "id": 13, "idParent": 2, "name": "Сэндвичи", "logo": "lucide:sandwich" },
+    { "id": 14, "idParent": 3, "name": "Торты", "logo": "lucide:cake" },
+    { "id": 15, "idParent": 3, "name": "Пирожные", "logo": "lucide:cookie" }
+  ],
+  "items": [
+    {
+      "id": 100,
+      "idGroup": 7,
+      "product": {
+        "id": 1000,
+        "name": "Эспрессо",
+        "price": 18000,
+        "description": "Классический двойной шот из 100% арабики.",
+        "weight": 30,
+        "unitType": "мл",
+        "nutrition": { "calories": 5, "protein": 0.3, "fat": 0.1, "carbs": 0.5 }
+      }
+    },
+    {
+      "id": 101,
+      "idGroup": 7,
+      "product": {
+        "id": 1001,
+        "name": "Американо",
+        "price": 22000,
+        "description": "Эспрессо с горячей водой — мягкий вкус и лёгкое тело.",
+        "weight": 250,
+        "unitType": "мл",
+        "nutrition": { "calories": 10, "protein": 0.5, "fat": 0.1, "carbs": 1.2 }
+      }
+    },
+    {
+      "id": 102,
+      "idGroup": 7,
+      "product": {
+        "id": 1002,
+        "name": "Ристретто",
+        "price": 19000,
+        "description": "Короткий интенсивный шот с яркой кислотностью и плотным телом.",
+        "weight": 20,
+        "unitType": "мл",
+        "nutrition": { "calories": 4, "protein": 0.2, "fat": 0.1, "carbs": 0.4 }
+      }
+    },
+    {
+      "id": 103,
+      "idGroup": 8,
+      "product": {
+        "id": 1003,
+        "name": "Капучино",
+        "price": 29000,
+        "description": "Баланс эспрессо и взбитого молока с плотной пенкой.",
+        "weight": 300,
+        "unitType": "мл",
+        "nutrition": { "calories": 120, "protein": 6.5, "fat": 5.2, "carbs": 10.8 }
+      }
+    },
+    {
+      "id": 104,
+      "idGroup": 8,
+      "product": {
+        "id": 1004,
+        "name": "Латте",
+        "price": 32000,
+        "description": "Нежный молочный напиток с тонким кофейным акцентом.",
+        "weight": 350,
+        "unitType": "мл",
+        "nutrition": { "calories": 180, "protein": 8.1, "fat": 7.4, "carbs": 14.2 }
+      }
+    },
+    {
+      "id": 105,
+      "idGroup": 8,
+      "product": {
+        "id": 1005,
+        "name": "Флэт уайт",
+        "price": 31000,
+        "description": "Двойной ристретто с бархатистой микропеной.",
+        "weight": 200,
+        "unitType": "мл",
+        "nutrition": { "calories": 110, "protein": 6.2, "fat": 5.8, "carbs": 9.4 }
+      }
+    },
+    {
+      "id": 106,
+      "idGroup": 9,
+      "product": {
+        "id": 1006,
+        "name": "Айс-латте",
+        "price": 34000,
+        "description": "Охлаждённый латте со льдом — идеален летом.",
+        "weight": 400,
+        "unitType": "мл",
+        "nutrition": { "calories": 165, "protein": 7.2, "fat": 6.1, "carbs": 16.5 }
+      }
+    },
+    {
+      "id": 107,
+      "idGroup": 9,
+      "product": {
+        "id": 1007,
+        "name": "Колд брю",
+        "price": 36000,
+        "description": "Настой холодным способом 12 часов — сладковатый и мягкий.",
+        "weight": 300,
+        "unitType": "мл",
+        "nutrition": { "calories": 8, "protein": 0.4, "fat": 0.1, "carbs": 1.0 }
+      }
+    },
+    {
+      "id": 108,
+      "idGroup": 9,
+      "product": {
+        "id": 1008,
+        "name": "Аффогато",
+        "price": 33000,
+        "description": "Шар ванильного мороженого, залитый горячим эспрессо.",
+        "weight": 180,
+        "unitType": "г",
+        "nutrition": { "calories": 210, "protein": 4.2, "fat": 9.8, "carbs": 26.4 }
+      }
+    },
+    {
+      "id": 109,
+      "idGroup": 10,
+      "product": {
+        "id": 1009,
+        "name": "Earl Grey",
+        "price": 24000,
+        "description": "Чёрный чай с бергамотом и цветочным послевкусием.",
+        "weight": 350,
+        "unitType": "мл",
+        "nutrition": { "calories": 2, "protein": 0, "fat": 0, "carbs": 0.4 }
+      }
+    },
+    {
+      "id": 110,
+      "idGroup": 10,
+      "product": {
+        "id": 1010,
+        "name": "English Breakfast",
+        "price": 23000,
+        "description": "Классический купаж с насыщенным вкусом и лёгкой терпкостью.",
+        "weight": 350,
+        "unitType": "мл",
+        "nutrition": { "calories": 2, "protein": 0, "fat": 0, "carbs": 0.3 }
+      }
+    },
+    {
+      "id": 111,
+      "idGroup": 10,
+      "product": {
+        "id": 1011,
+        "name": "Чай с имбирём и мёдом",
+        "price": 27000,
+        "description": "Согревающий напиток с лимоном и натуральным мёдом.",
+        "weight": 350,
+        "unitType": "мл",
+        "nutrition": { "calories": 45, "protein": 0.1, "fat": 0, "carbs": 11.2 }
+      }
+    },
+    {
+      "id": 112,
+      "idGroup": 11,
+      "product": {
+        "id": 1012,
+        "name": "Сенча",
+        "price": 26000,
+        "description": "Японский зелёный чай с травянистым ароматом.",
+        "weight": 350,
+        "unitType": "мл",
+        "nutrition": { "calories": 3, "protein": 0.2, "fat": 0, "carbs": 0.6 }
+      }
+    },
+    {
+      "id": 113,
+      "idGroup": 11,
+      "product": {
+        "id": 1013,
+        "name": "Жасминовый чай",
+        "price": 25000,
+        "description": "Зелёный чай, ароматизированный цветами жасмина.",
+        "weight": 350,
+        "unitType": "мл",
+        "nutrition": { "calories": 2, "protein": 0.1, "fat": 0, "carbs": 0.5 }
+      }
+    },
+    {
+      "id": 114,
+      "idGroup": 11,
+      "product": {
+        "id": 1014,
+        "name": "Матча латте",
+        "price": 35000,
+        "description": "Японский зелёный чай матча со взбитым молоком.",
+        "weight": 300,
+        "unitType": "мл",
+        "nutrition": { "calories": 140, "protein": 6.8, "fat": 5.5, "carbs": 14.8 }
+      }
+    },
+    {
+      "id": 115,
+      "idGroup": 6,
+      "product": {
+        "id": 1015,
+        "name": "Раф ванильный",
+        "price": 38000,
+        "description": "Сливочный кофейный напиток с ванильным сиропом.",
+        "weight": 350,
+        "unitType": "мл",
+        "nutrition": { "calories": 260, "protein": 6.8, "fat": 14.5, "carbs": 24.1 }
+      }
+    },
+    {
+      "id": 116,
+      "idGroup": 6,
+      "product": {
+        "id": 1016,
+        "name": "Горячий шоколад",
+        "price": 34000,
+        "description": "Густой напиток из бельгийского какао с взбитыми сливками.",
+        "weight": 300,
+        "unitType": "мл",
+        "nutrition": { "calories": 320, "protein": 8.4, "fat": 16.2, "carbs": 34.6 }
+      }
+    },
+    {
+      "id": 117,
+      "idGroup": 6,
+      "product": {
+        "id": 1017,
+        "name": "Облепиховый чай",
+        "price": 32000,
+        "description": "Авторский чайный напиток с облепихой, апельсином и специями.",
+        "weight": 400,
+        "unitType": "мл",
+        "nutrition": { "calories": 38, "protein": 0.3, "fat": 0.2, "carbs": 9.1 }
+      }
+    },
+    {
+      "id": 118,
+      "idGroup": 12,
+      "product": {
+        "id": 1018,
+        "name": "Скрембл с томатами",
+        "price": 42000,
+        "description": "Нежные яйца с томатами черри и зеленью.",
+        "weight": 280,
+        "unitType": "г",
+        "nutrition": { "calories": 320, "protein": 18.4, "fat": 22.1, "carbs": 8.3 }
+      }
+    },
+    {
+      "id": 119,
+      "idGroup": 12,
+      "product": {
+        "id": 1019,
+        "name": "Сырники",
+        "price": 38000,
+        "description": "Домашние сырники со сметаной и ягодным соусом.",
+        "weight": 220,
+        "unitType": "г",
+        "nutrition": { "calories": 410, "protein": 16.2, "fat": 18.6, "carbs": 42.3 }
+      }
+    },
+    {
+      "id": 120,
+      "idGroup": 12,
+      "product": {
+        "id": 1020,
+        "name": "Овсянка с бананом",
+        "price": 32000,
+        "description": "Каша на молоке с бананом, орехами и мёдом.",
+        "weight": 300,
+        "unitType": "г",
+        "nutrition": { "calories": 380, "protein": 12.4, "fat": 14.2, "carbs": 52.8 }
+      }
+    },
+    {
+      "id": 121,
+      "idGroup": 13,
+      "product": {
+        "id": 1021,
+        "name": "Клаб-сэндвич",
+        "price": 39000,
+        "description": "Курица, бекон, салат и соус на тостовом хлебе.",
+        "weight": 320,
+        "unitType": "г",
+        "nutrition": { "calories": 540, "protein": 28.6, "fat": 26.4, "carbs": 42.7 }
+      }
+    },
+    {
+      "id": 122,
+      "idGroup": 13,
+      "product": {
+        "id": 1022,
+        "name": "BLT",
+        "price": 36000,
+        "description": "Бекон, салат и томаты на хрустящем тосте с соусом.",
+        "weight": 280,
+        "unitType": "г",
+        "nutrition": { "calories": 480, "protein": 18.2, "fat": 28.4, "carbs": 36.1 }
+      }
+    },
+    {
+      "id": 123,
+      "idGroup": 13,
+      "product": {
+        "id": 1023,
+        "name": "Сэндвич с индейкой",
+        "price": 37000,
+        "description": "Нежная индейка, авокадо, руккола и соус песто.",
+        "weight": 300,
+        "unitType": "г",
+        "nutrition": { "calories": 420, "protein": 26.8, "fat": 16.4, "carbs": 38.2 }
+      }
+    },
+    {
+      "id": 124,
+      "idGroup": 14,
+      "product": {
+        "id": 1024,
+        "name": "Наполеон",
+        "price": 45000,
+        "description": "Классический слоёный торт с заварным кремом.",
+        "weight": 140,
+        "unitType": "г",
+        "nutrition": { "calories": 410, "protein": 6.2, "fat": 24.8, "carbs": 41.5 }
+      }
+    },
+    {
+      "id": 125,
+      "idGroup": 14,
+      "product": {
+        "id": 1025,
+        "name": "Медовик",
+        "price": 42000,
+        "description": "Медовые коржи с нежным сметанным кремом.",
+        "weight": 130,
+        "unitType": "г",
+        "nutrition": { "calories": 390, "protein": 5.8, "fat": 18.4, "carbs": 48.6 }
+      }
+    },
+    {
+      "id": 126,
+      "idGroup": 14,
+      "product": {
+        "id": 1026,
+        "name": "Чизкейк Нью-Йорк",
+        "price": 48000,
+        "description": "Классический сливочный чизкейк на песочной основе.",
+        "weight": 150,
+        "unitType": "г",
+        "nutrition": { "calories": 430, "protein": 7.4, "fat": 28.2, "carbs": 36.8 }
+      }
+    },
+    {
+      "id": 127,
+      "idGroup": 15,
+      "product": {
+        "id": 1027,
+        "name": "Эклер фисташковый",
+        "price": 28000,
+        "description": "Заварное тесто с фисташковым кремом и глазурью.",
+        "weight": 95,
+        "unitType": "г",
+        "nutrition": { "calories": 290, "protein": 5.4, "fat": 16.2, "carbs": 30.8 }
+      }
+    },
+    {
+      "id": 128,
+      "idGroup": 15,
+      "product": {
+        "id": 1028,
+        "name": "Макарон ассорти",
+        "price": 32000,
+        "description": "Три мини-макарона: малина, шоколад и ваниль.",
+        "weight": 60,
+        "unitType": "г",
+        "nutrition": { "calories": 240, "protein": 4.2, "fat": 10.8, "carbs": 32.4 }
+      }
+    },
+    {
+      "id": 129,
+      "idGroup": 15,
+      "product": {
+        "id": 1029,
+        "name": "Тирамису в стакане",
+        "price": 35000,
+        "description": "Савоярди, маскарпоне и эспрессо в порционной подаче.",
+        "weight": 120,
+        "unitType": "г",
+        "nutrition": { "calories": 310, "protein": 6.8, "fat": 18.6, "carbs": 28.4 }
+      }
+    },
+    {
+      "id": 130,
+      "idGroup": null,
+      "product": {
+        "id": 1030,
+        "name": "Подарочный сертификат",
+        "price": 50000,
+        "description": "Номинал от 500 ₽ на любые позиции из меню.",
+        "weight": null,
+        "unitType": null,
+        "nutrition": null
+      }
+    }
+  ]
+}

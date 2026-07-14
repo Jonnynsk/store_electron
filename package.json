@@ -1,0 +1,72 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite\" \"node scripts/electron-dev.js\"",
+    "dev:debug": "concurrently -k \"vite\" \"cross-env ELECTRON_OPEN_DEVTOOLS=1 node scripts/electron-dev.js\"",
+    "build": "vite build",
+    "start": "electron .",
+    "preview": "npm run build && electron .",
+    "pack": "npm run build && electron-builder --dir",
+    "dist": "npm run build && electron-builder",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "pinia": "^3.0.1",
+    "smooth-scrollbar": "^8.8.4",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.117",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^43.1.1",
+    "electron-builder": "^25.1.8",
+    "jsdom": "^26.0.0",
+    "unplugin-icons": "^23.0.1",
+    "vite": "^6.0.7",
+    "vitest": "^3.0.5",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.store.coffee",
+    "productName": "Coffee Store",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "catalog",
+        "to": "catalog",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "signAndEditExecutable": false
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    }
+  }
+}
